@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+
+  templ-gen:
+    cmds:
+      - templ generate

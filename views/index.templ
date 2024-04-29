@@ -1,0 +1,21 @@
+package views
+
+import (
+    "cluster-api-management-dashboard/views/components"
+)
+
+templ Index() {
+    <!DOCTYPE html>
+    <html lang="en">
+        @components.Header()
+        <body>
+            <main class="min-h-screen w-full">
+                @components.NavTemplate()
+                <div class="mt-6 w-full flex justify-center items-center flex-col">
+                      @components.Content()
+                </div>
+            </main>
+        </body>
+        @components.Footer()
+    </html>
+}
